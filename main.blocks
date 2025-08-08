@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=";MYV9bt.prL+MX7SGd-y">Player</variable><variable type="KIND_SpriteKind" id="blWK!=b4;]DEg!i{I7bZ">Projectile</variable><variable type="KIND_SpriteKind" id="PR2kU@5fejIh+%O3Vx9o">Food</variable><variable type="KIND_SpriteKind" id="mE@}4]Zlki/9UT).*3eM">Enemy</variable><variable id="[Od*n4SbwlL|iE@waenp">personaje</variable><variable id="/OOFm%ZvGd;NV;wBN(!H">WOLY</variable><variable id="=u4,?h12c,]Ah=mBQl$/">mySprite</variable><variable id=":+/SMb[AcOd8n;[|.w}#">CABEZA</variable></variables><block type="pxt-on-start" id="#$-Rc7_n@9[44uLePZ`@" x="0" y="0"><statement name="HANDLER"><block type="game_control_sprite" id="BpE6d!dgN+fU:pl.GXBE"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="u~d+y)2)rI.4/w$cjor8"><field name="VAR" id="/OOFm%ZvGd;NV;wBN(!H">WOLY</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="~$?=2rIsQZVHUTaZc3Pq"><field name="speed">20</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="j@HC9?IM:y|x0Apj:*X="><field name="speed">20</field></shadow></value></block></statement></block><block type="variables_get" id="FN0MYl*[%Dha669GX)^;" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="881" y="114"><field name="VAR" id="[Od*n4SbwlL|iE@waenp">personaje</field></block><block type="variables_set" id="==~])ioke!b+d-}TQ1AJ" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="55" y="161"><field name="VAR" id=":+/SMb[AcOd8n;[|.w}#">CABEZA</field><value name="VALUE"><shadow type="math_number" id="5%@=}ZT]iqHor{z7LI/_"><field name="NUM">0</field></shadow><block type="spritescreate" id="@7(Z%^.d{hi.09(_.H[[" disabled-reasons="MANUALLY_DISABLED"><value name="img"><shadow type="screen_image_picker" id="p4J6=SD7zpL/C!:skb%$" disabled-reasons="MANUALLY_DISABLED"><field name="img">img`
+. . . . . . . . 
+. . . . . . . . 
+. . . . . . . . 
+. . c c c . . . 
+. c c 6 6 c . . 
+c c 3 3 f 6 c . 
+c 6 c f 6 3 c . 
+c 3 6 3 3 3 c . 
+c 3 6 6 3 3 c . 
+c 3 3 6 6 3 c . 
+. c 3 3 3 6 . . 
+. . 6 7 6 . . . 
+. . 6 6 8 8 8 6 
+. . 6 8 7 7 7 6 
+. . 8 7 7 7 6 . 
+. . 8 8 8 6 . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="XU*@kHS40vPe1}+fF1Z@" disabled-reasons="MANUALLY_DISABLED"><field name="MEMBER">Food</field></shadow></value></block></value></block><block type="melody_editor" id="8x9XTIX)lMVXHg.$!}%D" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="781" y="208"><field name="melody">"- - - - - - - - "</field></block><block type="variables_set" id="DB6EE}XringRyJ3HF8]7" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="198" y="347"><field name="VAR" id="[Od*n4SbwlL|iE@waenp">personaje</field><value name="VALUE"><shadow type="math_number" id="F`rS0sNt`q7CCF9xjI]E"><field name="NUM">0</field></shadow><block type="spritescreate" id="Xw,{-f$?zK=*^|[UP$G^" disabled-reasons="MANUALLY_DISABLED"><value name="img"><shadow type="screen_image_picker" id="LxvjX],QT]5`Ybon/.+6" disabled-reasons="MANUALLY_DISABLED"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="zPu[M.D0c{U_;ZEiH{hR" disabled-reasons="MANUALLY_DISABLED"><field name="MEMBER">Player</field></shadow></value></block></value></block><block type="music_playable_play" id="|0y]~QP4VQIzbglwK:V/" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="811" y="482"><field name="playbackMode">music.PlaybackMode.InBackground</field><value name="toPlay"><shadow type="music_string_playable" id="l`%gC!-lniaon3?tubFj"><value name="melody"><shadow type="melody_editor" id="rE?:RjhQOyxNf?(_Ne[z"><field name="melody">"- - - - - - - - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="dasUp].m)}((~1SCueN+"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></shadow><block type="music_string_playable" id="|um*yV5i2)3ia75k1J3C" disabled-reasons="MANUALLY_DISABLED"><value name="melody"><shadow type="melody_editor" id="2},eqmyA=OjJvJF(K`Et"><field name="melody">"- - - - - - - - "</field></shadow><block type="melody_editor" id=":3dL~g*a7EyNDox%CeNh" disabled-reasons="MANUALLY_DISABLED"><field name="melody">"- - - - - - - - "</field></block></value><value name="tempo"><shadow type="math_number_minmax" id="p$[he}#%dbcLytzz}V{r" disabled-reasons="MANUALLY_DISABLED"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></block></value></block></xml>
